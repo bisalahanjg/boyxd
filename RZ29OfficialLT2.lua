@@ -83,13 +83,6 @@ section2:addButton("RZ29 Official", function()
         Text = "Link Copied"
     })
 end)
-section2:addButton("Join Discord", function()
-    setclipboard("https://discord.com/invite/Vf9sTAjvtK")
-    game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "RZ29 Official";
-        Text = "Link Discord Copied"
-    })
-end)
 section2:addButton("Join Roblox Group", function()
     setclipboard("https://www.roblox.com/groups/11943708/SPM55#!/about")
     game:GetService("StarterGui"):SetCore("SendNotification", {
