@@ -945,4 +945,3 @@ local CloseScript = game:GetService("CoreGui").ChildRemoved:Connect(function(chi
         game:GetService("StarterGui"):Disconnect()
     end
 end)
-
