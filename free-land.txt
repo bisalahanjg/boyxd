@@ -1,0 +1,16 @@
+for a,b in pairs(workspace.Properties:GetChildren()) do 
+    if b:FindFirstChild("Owner") and b:FindFirstChild("OriginSquare") and b.Owner.Value == nil then 
+        game.ReplicatedStorage.PropertyPurchasing.ClientPurchasedProperty:FireServer(b, b.OriginSquare.OriginCFrame.Value.p + Vector3.new(0,3,0))
+ wait(0.5)
+        Instance.new('RemoteEvent', game:service'ReplicatedStorage'.Interaction).Name = "Ban"
+	for i,v in pairs(game.Workspace.Properties:GetChildren()) do
+		if v.Owner.Value == game.Players.LocalPlayer then
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    wait(0.1)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.OriginSquare.CFrame + Vector3.new(0,10,0)
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+    wait(0.1)
+		end
+	end
+    end
+end
